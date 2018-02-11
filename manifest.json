@@ -5,9 +5,8 @@
 	"version": "1.0",
 	"content_scripts": [
 		{
-			"matches": [
-				"*://*/*"
-			],
+			"matches": [ "*://*/*" ],
+			"exclude_matches": ["https://www.youtube.com/*"],
 			"js": [
 				"chinesetoneslist.js",
 				"chinesecolortones.js"
