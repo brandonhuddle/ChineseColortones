@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Chinese Colortones",
+	"description": "Extension to color Chinese characters based off their tones in Mandard",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*"
+			],
+			"js": [
+				"chinesetoneslist.js",
+				"chinesecolortones.js"
+			],
+			"run_at": "document_end"
+		}
+	]
+}
